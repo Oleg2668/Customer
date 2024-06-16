@@ -1,16 +1,22 @@
 package app;
 
 public class Customer {
-// Виправте декларацію змінних класу
-    private final name;
+    private final String name; // Виправлено декларацію змінної name
     private final String phone;
 
-    // Виправте визначення конструктора
-    public Customer(name, String ) {
+    // Виправлено визначення конструктора
+    public Customer(String name, String phone) {
         this.name = name;
         this.phone = phone;
     }
 
-// Пропишіть нижче getters для всіх змінних класу
+    // Додано getters для змінних класу
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
 
 }
